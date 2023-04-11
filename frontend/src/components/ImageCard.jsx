@@ -1,10 +1,10 @@
-import ImageDownloadButton from "./download"
 
 const ImageCard = ({ image }) => {
     return (
         <div>
+        <a href={image} download>
         <img className="w-full rounded shadow-sm" src={image} alt="" />
-        <ImageDownloadButton imageUrl={image} />
+        </a>
         </div>
         )
 }
