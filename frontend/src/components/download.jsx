@@ -11,7 +11,10 @@ function ImageDownloadButton({ imageUrl }) {
   };
 
   return (
-    <button onClick={handleDownload}>Download Image</button>
+    <div>
+    <a href={imageUrl} download > </a>
+    <button onClick={handleDownload}></button>
+    </div>
   );
 }
 export default ImageDownloadButton
