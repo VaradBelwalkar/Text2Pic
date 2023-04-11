@@ -1,6 +1,11 @@
 const { Configuration, OpenAIApi } = require("openai");
+
+let str = process.env.OPENAI_API_KEY;
+str = str.replace(/\r?\n|\r/g, "");
+
+
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY
+  apiKey: str
 });
 const openai = new OpenAIApi(configuration)
 
