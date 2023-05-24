@@ -5,10 +5,10 @@ function App() {
   const [listImages, setListImages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   
-
+  
   return (
     <div>
-      <Header setListImages={setListImages} setIsLoading={setIsLoading}/>
+      <Header setListImages={setListImages} setIsLoading={setIsLoading} token={token}/>
       <ImageResults listImages={listImages} isLoading={isLoading} />
     </div>
   )
